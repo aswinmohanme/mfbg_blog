@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>Thoughts on Lisp</title>
+    <style>
+      body {
+        margin: 40px auto;
+        max-width: 1024px;
+        width: 80vw;
+        font-size: 18px;
+        line-height: 1.6;
+        font-family: sans-serif;
+        color: #444;
+        padding: 0 10px
+      }
+      h1,h2,h3 {
+        line-height:1.2
+      }
+      pre {
+        background-color: #eeeeee;
+        padding: 5px 10px;
+        margin: 0px;
+          font-size: 16px;
+        overflow: scroll;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="/">Home</a>
+<h1 id="thoughts-on-lisp">Thoughts on Lisp</h1>
+<p>2018-04-28</p>
+<blockquote>
+<p>Lisp is awesome, lisp can make you the 10x programmer, Lisp is the Hero we need</p>
+</blockquote>
+<p>I have been reading about Lisp for some time now, and wherever I look and whatever I read there is always entire essays dedicated to lisp, how it&rsquo;s awesome, how it can make you a better programmer, how it can solve world hunger given the chance.</p>
+<p>Lisp is a pretty old programming language, the second oldest still in use after fortran. It&rsquo;s actually inspiring to think any language to be still around even after decades when the average life span of a JS library is about 3 hours. This is the fact that is most intriguing for me. Why has Lisp survived so long ? Are the things told about Lisp true?</p>
+<p>Is there something of essence of Lisp that I&rsquo;m missing ? Am I not looking far enough ?</p>
+<h3 id="what-lisp-is-about">What Lisp is about ?</h3>
+<p>From my brief time that I have spent learning about Lisp, I can say this, Lisp is mostly about parenthesis(spelled it wrong i think). It&rsquo;s the () that gives the true power to lisp.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb1-1" title="1">  (<span class="kw">defun</span><span class="fu"> list&gt;</span>= (a b)</a>
+<a class="sourceLine" id="cb1-2" title="2">  (<span class="kw">cond</span></a>
+<a class="sourceLine" id="cb1-3" title="3">    ((<span class="kw">or</span> (<span class="kw">null</span> a) (<span class="kw">null</span> b)) <span class="kw">nil</span>)</a>
+<a class="sourceLine" id="cb1-4" title="4">    ((<span class="op">&gt;=</span> a (<span class="kw">car</span> b)) (list&gt;= a (<span class="kw">cdr</span> b)))</a>
+<a class="sourceLine" id="cb1-5" title="5">    (<span class="kw">t</span> (<span class="kw">cons</span> (<span class="kw">car</span> b) (list&gt;= a (<span class="kw">cdr</span> b))))))</a></code></pre></div>
+<p>For a newbie, this looks like a lot of parens, but to the trained eye this actually looks like a lot of parens. It&rsquo;s the parens that might give Lisp it&rsquo;s true power, or is it something that McCarthy did decades ago that is embedded deep inside the language ?</p>
+<p>I really do like the parens, I really enjoy myself when typing those out. Pretty weird</p>
+<h3 id="lisp-the-good-things">Lisp the Good Things</h3>
+<p>All the essays concerning Lisp praise the immense power that Lisp bestows upon the user, aka programmer. The ability to change code on the fly, the parens, the lists everything seems to come from another planet.</p>
+<p>But there is no immediate feedback on all of these so praised things. Learning Haskell it became obvious how great Haskell is for typing less code, and how bad javascript is when Learning JS. But when I&rsquo;m dipping my toes inside Lisp, I am not feeling the real happiness or the enlightment promised. All I&rsquo;m seeing is more and more parens, which I do enjoy typing.</p>
+<h3 id="its-not-lisp-its-me">It&rsquo;s Not Lisp, It&rsquo;s Me</h3>
+<p>I have rambled on for a couple of lines now. I honestly think Lisp is all the above claimed things. Lisp is beautiful like that country side girl who does not put on a shit ton of makeup. I have to spend more time with Lisp to see whether it holds up to the promise. I need to see more into the distance.</p>
+<p>I got to work more on Lisp to see what the true essence of Lisp is. I also hear it&rsquo;s macro system is super awesome too.</p>
+<p><a href="https://news.ycombinator.com/item?id=17030662">Discuss on HN</a></p>
+    <a href="/">Back</a>
+  </body>
+</html>
