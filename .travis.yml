@@ -10,5 +10,3 @@ deploy:
   local_dir: site
   provider: pages
   skip_cleanup: true
-  on:
-    branch: master
