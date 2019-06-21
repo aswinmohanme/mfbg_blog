@@ -1,38 +1,46 @@
 <html>
-  <head>
-    <title>Thoughts on Lisp</title>
-    <style>
-      body {
-        margin: 40px auto;
-        max-width: 1024px;
-        width: 80vw;
-        font-size: 18px;
-        line-height: 1.6;
-        font-family: sans-serif;
-        color: #444;
-        padding: 0 10px
-      }
-      h1,h2,h3 {
-        line-height:1.2
-      }
-      pre {
-        background-color: #eeeeee;
-        padding: 5px 10px;
-        margin: 0px;
-        font-size: 16px;
-        overflow: never;
-      }
-     blockquote {
-         background-color: #eeeeee;
-         margin: 0px;
-         padding: 16px 64px;
-         font-size: 16px;
-         overflow: never;
-     }
 
+<head>
+    <title>Thoughts on Lisp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 40px auto;
+            max-width: 1024px;
+            width: 80vw;
+            line-height: 1.6;
+            font-size: calc(16px + (18 - 16) * ((80vw - 300px) / (1024 - 300)));
+            font-family: sans-serif;
+            color: #444;
+            padding: 0 10px
+        }
+
+        h1,
+        h2,
+        h3 {
+            line-height: 1.2
+        }
+
+        pre {
+            background-color: #eeeeee;
+            font-family: monospace;
+            padding: calc(1em + 1vw);
+            margin: 0px;
+            font-size: calc(14px + (16 - 14) * ((80vw - 300px) / (1024 - 300)));
+            overflow: auto;
+        }
+
+        blockquote {
+            background-color: #eeeeee;
+            margin: 0px;
+            padding: calc(1em + 1vw);
+            font-size: calc(14px + (16 - 14) * ((80vw - 300px) / (1024 - 300)));
+            overflow: auto;
+        }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <a href="/">Home</a>
 <h1 id="thoughts-on-lisp">Thoughts on Lisp</h1>
 <p>2018-04-28</p>
@@ -59,5 +67,6 @@
 <p>I got to work more on Lisp to see what the true essence of Lisp is. I also hear it&rsquo;s macro system is super awesome too.</p>
 <p><a href="https://news.ycombinator.com/item?id=17030662">Discuss on HN</a></p>
     <a href="/">Back</a>
-  </body>
-</html>
+    </body>
+
+    </html>
