@@ -2,7 +2,7 @@ Why Google refunded 200$ because I missed 5 lines of code
 =========================================================
 2019-06-13
 
-So this is going to be a quick one. I am the maker of LessPhone, it's an Android Launcher to tone down your phone use. It has one in app purchase to unlock the dark theme and the ability to set the number of custom apps on the screen and costs about a dollar. It has been running for around 10 months and averages around 700-800$ revenue each month.
+So this is going to be a quick one. I am the maker of [LessPhone](https://play.google.com/store/apps/details?id=me.aswinmohan.nophone&hl=en_IN), it's an Android Launcher to tone down your phone use. It has one in app purchase to unlock the dark theme and the ability to set the number of custom apps on the screen and costs about a dollar. It has been running for around 10 months and averages around 700-800$ revenue each month.
 
 I ported the App from react-native to Kotlin to Flutter to Kotlin with Android Jetpack. The app was in a pretty great usable condition when it was written in Flutter, it was fast and slick and beautiful. Still the APK was around 6MB and it was on the heavy side considering a launcher like this. So I decided to port the launcher to Kotlin and after around 40Hrs learning the Jetpack library and coding I was succesful in porting LessPhone to Kotlin. There were bugs in the initial versions but everything was ironed out. 
 
